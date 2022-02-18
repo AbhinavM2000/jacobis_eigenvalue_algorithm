@@ -160,7 +160,11 @@ void main() {
     }
 
     num++;
-    A = atan(a[p * 10 + q]) / (a[p * 10 + p] - a[q * 10 + q]); //angle of rotation
+    
+  if((a[p * 10 + p] - a[q * 10 + q])==0)
+      A=9999999999;//infinity    
+	else
+      A = atan(a[p * 10 + q]) / (a[p * 10 + p] - a[q * 10 + q]); //angle of rotation
     C = cos(A);
     S = sin(A);
     rotmat(C, S, n, p, q, b);
