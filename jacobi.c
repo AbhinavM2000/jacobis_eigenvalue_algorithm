@@ -33,7 +33,7 @@ void matrixequals(float * x, float * y, int n) { //Function to do x=y for matric
 
 }
 
-void writematrix(float * x, int a) //Function to print an square matrix of order 'a'
+void writematrix(float * x, int a) //Function to print a square matrix of order 'a'
 {
   int i, j;
   for (i = 1; i <= a; i++) {
@@ -44,7 +44,7 @@ void writematrix(float * x, int a) //Function to print an square matrix of order
   }
 }
 
-void transpose(float * a, int n, float * trans) //Function to transpose an square matrix of order 'n'
+void transpose(float * a, int n, float * trans) //Function to transpose a square matrix of order 'n'
 {
   int i, j;
   for (i = 1; i <= n; i++) {
